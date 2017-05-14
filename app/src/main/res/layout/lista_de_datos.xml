@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -16,20 +18,23 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_toRightOf="@+id/idImagenLst"
-                android:paddingRight="90dp">
+                android:paddingRight="90dp"
+                tools:ignore="RtlHardcoded,RtlSymmetry">
                 <TextView
                     android:id="@+id/idTextoTitulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="20dp"
                     android:paddingTop="5dp"
-                    android:text="Este es el titulo de la app"/>
+
+                    tools:ignore="RtlSymmetry" />
                 <TextView
                     android:id="@+id/idTextoDetalle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="20dp"
-                    android:text="Este es el Detalle de la aplicacion"/>
+
+                    tools:ignore="RtlSymmetry" />
             </LinearLayout>
 
     <ImageView
@@ -37,7 +42,8 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription,RtlHardcoded" />
      </RelativeLayout>
 
     </LinearLayout>
