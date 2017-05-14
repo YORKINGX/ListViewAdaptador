@@ -17,14 +17,16 @@ public class MainActivity extends AppCompatActivity {
         listadeDatos = (ListView) findViewById(R.id.lstDatos);
         arraydeDatos = new ArrayList<DatosList>();
         arraydeDatos.add(new DatosList(1,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais1));
-        arraydeDatos.add(new DatosList(1,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais2));
-        arraydeDatos.add(new DatosList(1,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais3));
-        arraydeDatos.add(new DatosList(1,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais4));
-        arraydeDatos.add(new DatosList(1,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais5));
-        arraydeDatos.add(new DatosList(1,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais6));
-        arraydeDatos.add(new DatosList(1,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais7));
-        arraydeDatos.add(new DatosList(1,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais8));
+        arraydeDatos.add(new DatosList(2,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais2));
+        arraydeDatos.add(new DatosList(3,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais3));
+        arraydeDatos.add(new DatosList(4,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais4));
+        arraydeDatos.add(new DatosList(5,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais5));
+        arraydeDatos.add(new DatosList(6,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais6));
+        arraydeDatos.add(new DatosList(7,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais7));
+        arraydeDatos.add(new DatosList(8,"Este es el titulo del pais","Este es el detalle del Pais", R.drawable.ic_pais8));
 
         AdaptadorDeLista midaptador = new AdaptadorDeLista(getApplicationContext(),arraydeDatos);
+        listadeDatos.setAdapter(midaptador);
+
     }
 }
