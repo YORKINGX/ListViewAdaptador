@@ -53,9 +53,11 @@ public class AdaptadorDeLista extends BaseAdapter {
         View vista = convertView;
         LayoutInflater inflar = LayoutInflater.from(EsteContexto);
         vista = inflar.inflate(R.layout.lista_de_datos,null);
+
         ImageView idImagen = (ImageView) vista.findViewById(R.id.idImagenLst);
         TextView idTextTitulo = (TextView) vista.findViewById(R.id.idTextoTitulo);
         TextView idTextDetalle = (TextView) vista.findViewById(R.id.idTextoDetalle);
+
         idTextTitulo.setText(listadeobjetos.get(position).getTitulo().toString());
         idTextDetalle.setText(listadeobjetos.get(position).getDetalle().toString());
         idImagen.setImageResource(listadeobjetos.get(position).getImagen());
